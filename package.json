@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Conroyce/instagram",
   "dependencies": {
     "express": "^4.11.1",
-    "jade": "^1.9.1"
+    "jade": "^1.9.1",
+    "mongodb": "~2.0"
   }
 }
