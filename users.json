@@ -1,9 +1,13 @@
 [
-  {"id":0,
+  {"id":1,
   "name":"Steve",
   "email":"Steve@aol.com",
-  "photos":["lorempixel.com/400/200",
-            "lorempixel.com/400/200"
-            ],
+  "photos":[{"id":1},{"id":3}],
+  "following": [2] },
+  
+  {"id":2,
+  "name":"Suzy",
+  "email":"Suzy@gmail.com",
+  "photos":[{"id":2}],
   "following": [1] }
 ]  
