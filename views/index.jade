@@ -4,14 +4,17 @@ html
     title Instagram
   body
     h1 Instagram
+    h3 Sign In
     form
-      input(type="text",placeholder="Enter Name",class="photoUser")
-      br
-      input(type="text",placeholder="Enter Title",class="photoTitle")
-      br
-      input(type="file",class="photoFile")
-      br
-      input(type="submit",class="photoAdd") 
+      input(type="text", placeholder="Name", class="signName")
+      input(type="text", placeholder="Email", class="signEmail")
+      input(type="submit", class="signSubmit")
+
+    h3 New User? Sign Up
+    form
+      input(type="text", placeholder="Name", class="newName")
+      input(type="text", placeholder="Email", class="newEmail")
+      input(type="submit", class="newSubmit")       
 
     script(src="/js/jquery.min.js") 
     script(src="/js/main.js")
