@@ -1,0 +1,17 @@
+[
+  {"title":"pic 1",
+   "src": "lorempixel.com/400/200",
+   "likes": 5},
+
+  {"title":"pic 2",
+  "src": "lorempixel.com/400/200",
+  "likes": 3},
+
+  {"title":"pic 3",
+   "src": "lorempixel.com/400/200",
+   "likes": 1},
+
+  {"title":"pic 4",
+  "src": "lorempixel.com/400/200",
+  "likes": 9}
+]

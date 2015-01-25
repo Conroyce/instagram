@@ -1,0 +1,9 @@
+[
+  {"id":0,
+  "name":"Steve",
+  "email":"Steve@aol.com",
+  "photos":["lorempixel.com/400/200",
+            "lorempixel.com/400/200"
+            ],
+  "following": [1] }
+]  
