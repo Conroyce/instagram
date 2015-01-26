@@ -5,20 +5,19 @@ html
   body
     h1 Instagram
     form
-      input(type="text",placeholder="Enter Name",class="photoUser")
-      br
       input(type="text",placeholder="Enter Title",class="photoTitle")
       br
       input(type="file",class="photoFile")
       br
       input(type="submit",class="photoAdd") 
+      input(type="hidden",value="#{id}",class="photoId")
 
     ol
       each photo in photos
         li Title: #{photo.title}
         li Image: 
           img(src="http://#{photo.src}")
-        li Likes: #{photo.likes}
+        li Likes: #{photo.likes}       
 
     script(src="/js/jquery.min.js") 
     script(src="/js/addPhoto.js")
