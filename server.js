@@ -6,6 +6,10 @@ var photosFile = require("./photos");
 var fs = require("fs");
 var bodyParser = require('body-parser');
 var multer = require('multer');
+var http = require("http")
+
+var root = __dirname + '/assets/';
+
 var app = express();
 
 app.use(express.static(__dirname+"/assets"));

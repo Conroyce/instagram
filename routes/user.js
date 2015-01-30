@@ -25,30 +25,42 @@ router.route("/")
 
 router.route("/:id/photos")
   .get(function(req,res) {
+
     var id = req.params.id
     var photos = [];
     photosFile.forEach(function(photo) {
       if (photo.user_id == id) {
         photos.push(photo);
       }
-    })
-    console.log(id);
+    });
+
     res.render("photos",{photos:photos,id:id});
   })
   .post(function(req,res,next) {
-    var info = req.body;
+    var title = req.body.photoTitle;
+    var id = req.body.userId;
+    var photo = req.files.photoFile;
+    console.log(photo);
     var photo = {
-      title: info.title,
-      src: info.photo,
+      title: title,
+      src: photo.name,
       likes: 0,
       id: photosFile.length+1,
-      user_id: req.params.id
+      user_id: id,
+      size: photo.size,
+      type: photo.extension
     };
     photosFile.push(photo);
     fs.writeFileSync("./photos.json",JSON.stringify(photosFile));
-    console.log(photosFile);
+    res.render("photos", {photos: usersFile[id-1].photos,id:id});
+    var photos = [];
+    photosFile.forEach(function(photo) {
+      if (photo.user_id == id) {
+        photos.push(photo);
+      }
+    });
+    res.render("photos",{photos:photos,id:id});
 
-    res.render("index");
   });  
   
 

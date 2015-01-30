@@ -19,6 +19,8 @@
   "dependencies": {
     "express": "^4.11.1",
     "jade": "^1.9.1",
-    "mongodb": "~2.0"
+    "mongodb": "*",
+    "monk": "*",
+    "busboy": "0.2.9"
   }
 }
