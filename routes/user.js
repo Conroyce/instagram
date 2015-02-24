@@ -40,6 +40,7 @@ router.route("/:id/photos")
     var title = req.body.photoTitle;
     var id = req.body.userId;
     var photo = req.files.photoFile;
+    
     console.log(photo);
     var photo = {
       title: title,
